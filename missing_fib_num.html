@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+number=+prompt("enter a number: ")//input 5
+a=0,b=1,count=0,s='',sum=0
+
+while(count!=number){
+    for(i=a+1;i<b;i++){
+        count++
+        s=s+i+" "
+        sum=sum+i
+        if(count==number){
+            break
+            
+        }
+       
+    }
+    c=a+b
+    a=b
+    b=c
+}
+console.log(s,sum)
+//output 4 6 7 9 10 36
+    </script>
+</body>
+</html>
